@@ -61,7 +61,7 @@ public class TestMyLine {
 
         // Begin values after should be x=1, y=3
         xyBegin = ml1.getBeginXY();
-        System.out.println("getBeginXY() array values after (x,y): (" + xyBegin[0] + "," + xyBegin[1] + ")");
+        System.out.println("getBeginXY() array values after setBeginXY (x,y): (" + xyBegin[0] + "," + xyBegin[1] + ")");
 
         // End values should be x=7, y=1
         int[] xyEnd = ml1.getEndXY();
@@ -70,7 +70,7 @@ public class TestMyLine {
 
         // End values after should be x=5, y=9
         xyEnd = ml1.getEndXY();
-        System.out.println("getEndXY() array values after (x,y): (" + xyEnd[0] + "," + xyEnd[1] + ")");
+        System.out.println("getEndXY() array values after setEndXY (x,y): (" + xyEnd[0] + "," + xyEnd[1] + ")");
 
         // Get the length of MyLine ml2
         System.out.printf("\nLength of MyLine ml2: %.2f", ml2.getLength());
