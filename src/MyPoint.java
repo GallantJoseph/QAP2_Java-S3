@@ -47,7 +47,7 @@ public class MyPoint {
 
     // toString method overload
     public String toString() {
-        return ("(" + this.x + ", " + this.y + ")");
+        return ("(" + this.x + "," + this.y + ")");
     }
 
     // Calculate and return the distance between two points
