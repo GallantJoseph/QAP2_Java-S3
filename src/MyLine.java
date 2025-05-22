@@ -63,7 +63,7 @@ public class MyLine {
     }
 
     public void setEndX(int x) {
-        this.begin.setX(x);
+        this.end.setX(x);
     }
 
     public int getEndY() {
