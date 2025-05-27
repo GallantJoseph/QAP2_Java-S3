@@ -1,7 +1,7 @@
 /*
     Description: QAP 2 - Problem 1 - TestMyLine Class
     Author: Joseph Gallant
-    Dates: May 22, 2025
+    Date: May 22, 2025
  */
 
 public class TestMyLine {
