@@ -92,6 +92,39 @@ public class Money {
         return this;
     }
 
+    // Compare the current Money object with another one
+    // Returns 1 if it's over, 0 if it's the same, -1 if it's lower
+    public int compareTo(Money otherObject) {
+        // Get the value in cents for each Money object
+        long dollarCents = Math.abs(this.dollars * 100) + Math.abs(this.cents);
+        long otherDollarCents = Math.abs(otherObject.dollars * 100) + Math.abs(otherObject.cents);
+
+        // If the dollar or cent value is negative, adjust it to become negative
+        if (this.dollars < 0 || this.cents < 0) {
+            dollarCents = -dollarCents;
+        }
+
+        if (otherObject.dollars < 0 || otherObject.cents < 0) {
+            otherDollarCents = -otherDollarCents;
+        }
+
+        // If the current Money amount is over the otherObject Money amount, return 1;
+        // the same as, return 0; less than, return -1
+        if (dollarCents > otherDollarCents) {
+            return 1;
+        } else if (dollarCents == otherDollarCents) {
+            return 0;
+        } else {
+            return -1;
+        }
+    }
+
+    // Method that compares the values of the current Money object, and another one
+    // Returns true if they are equal
+    public boolean equals(Money otherObject) {
+        return (this.compareTo(otherObject) == 0);
+    }
+
     // toString method overload
     public String toString() {
         // If the amount is between -0.99 and -0.01

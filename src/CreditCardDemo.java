@@ -9,6 +9,7 @@ public class CreditCardDemo {
         Money m1 = new Money(-3.23);
         Money m2 = new Money(0.72);
         Money m3 = m1.add(m2);
+        Money m4 = new Money(-3.23);
 
         // -3.23 + 0.72 = -2.51
         System.out.println(m1);
@@ -17,5 +18,12 @@ public class CreditCardDemo {
 
         //-2.51 - 0.72 = -3.23
         System.out.println(m1);
+
+        System.out.println(m1.compareTo(m2));
+        System.out.println(m2.compareTo(m1));
+        System.out.println(m2.compareTo(m2));
+
+        System.out.println(m1.equals(m2));
+        System.out.println(m1.equals(m4));
     }
 }
