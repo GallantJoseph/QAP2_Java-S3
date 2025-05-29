@@ -1,7 +1,7 @@
 /*
     Description: QAP 2 - Problem 3 - Money Class
     Author: Joseph Gallant
-    Date: May 28, 2025
+    Dates: May 28, 2025 - May 29, 2025
  */
 
 public class Money {
@@ -11,6 +11,7 @@ public class Money {
 
     // Constructors
     // Copy
+    // Task 1: Overloading by writing a copy constructor
     public Money(Money otherObject) {
         this.dollars = otherObject.dollars;
         this.cents = otherObject.cents;
@@ -127,12 +128,15 @@ public class Money {
 
     // toString method overload
     public String toString() {
+        String formattedAmt;
         // If the amount is between -0.99 and -0.01
         // Display the negative sign before the dollar amount
         if (this.dollars == 0 && this.cents < 0) {
-            return "-" + this.dollars + "." + Math.abs(this.cents);
+            formattedAmt = String.format("$-%d.%02d", this.dollars, Math.abs(this.cents));
         } else {
-            return this.dollars + "." + this.cents;
+            formattedAmt = String.format("$%d.%02d", this.dollars, this.cents);
         }
+
+        return formattedAmt;
     }
 }
