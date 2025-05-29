@@ -59,6 +59,7 @@ public class CreditCard {
         // Make sure the payment amount is a positive value
         if (amount.compareTo(new Money(0)) > 0) {
             this.balance.subtract(amount);
+            System.out.println("Payment: " + amount.toString());
         } else {
             System.out.println("The payment amount should be positive.");
         }
