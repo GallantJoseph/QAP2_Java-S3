@@ -12,9 +12,9 @@ public class Person {
 
     // Constructors
     // Parameterized
-    public Person(String firstName, String lastName, Address home) {
-        this.firstName = firstName;
+    public Person(String lastName, String firstName, Address home) {
         this.lastName = lastName;
+        this.firstName = firstName;
         this.home = home;
     }
 
