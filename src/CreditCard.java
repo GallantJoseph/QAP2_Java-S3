@@ -47,7 +47,7 @@ public class CreditCard {
         // If there is enough credit available, allow the transaction, otherwise, just show an error message.
         if (availableCredit.compareTo(amount) >= 0) {
             this.balance.add(amount);
-            System.out.println("Charge: " + amount.toString());
+            System.out.println("Charge: " + amount);
         } else {
             System.out.println("Exceeds credit limit");
         }
@@ -59,7 +59,7 @@ public class CreditCard {
         // Make sure the payment amount is a positive value
         if (amount.compareTo(new Money(0)) > 0) {
             this.balance.subtract(amount);
-            System.out.println("Payment: " + amount.toString());
+            System.out.println("Payment: " + amount);
         } else {
             System.out.println("The payment amount should be positive.");
         }

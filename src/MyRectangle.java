@@ -71,7 +71,7 @@ public class MyRectangle {
         return (double) 2 * (width + height);
     }
 
-    // toString method overload
+    // toString method override
     public String toString() {
         return ("MyRectangle[topLeft=" + this.topLeft + ", botRight=" + this.botRight + "]");
     }

@@ -104,7 +104,7 @@ public class MyLine {
         return Math.atan2(yDiff, xDiff);
     }
 
-    // toString method overload
+    // toString method override
     public String toString() {
         return ("MyLine[begin=" + this.begin.toString() + ",end=" + this.end.toString() + "]");
     }

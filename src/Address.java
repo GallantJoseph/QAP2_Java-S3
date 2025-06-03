@@ -20,7 +20,7 @@ public class Address {
         this.zip = zip;
     }
 
-    // toString method overload
+    // toString method override
     public String toString() {
         return (street + ", " + city + ", " + state + ", " + zip);
     }

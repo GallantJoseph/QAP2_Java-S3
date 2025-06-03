@@ -18,7 +18,7 @@ public class Person {
         this.home = home;
     }
 
-    // toString method overload
+    // toString method override
     public String toString() {
         return (firstName + " " + lastName + ", " + home.toString());
     }

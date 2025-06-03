@@ -126,7 +126,7 @@ public class Money {
         return (this.compareTo(otherObject) == 0);
     }
 
-    // toString method overload
+    // toString method override
     public String toString() {
         String formattedAmt;
         // If the amount is between -0.99 and -0.01

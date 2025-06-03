@@ -45,7 +45,7 @@ public class MyPoint {
         this.y = y;
     }
 
-    // toString method overload
+    // toString method override
     public String toString() {
         return ("(" + this.x + "," + this.y + ")");
     }
